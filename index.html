@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The Wandering Eye — travel, street and portrait photography.">
+  <title>The Wandering Eye — Photography</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="The Wandering Eye home">THE WANDERING EYE</a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" class="site-nav">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <img src="assets/images/hero.webp" alt="Photographer watching a golden sunset">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">TRAVEL · STREET · PORTRAITS</p>
+        <h1>The Wandering Eye</h1>
+        <p class="hero-line">Seeing places. Feeling moments. Keeping the journey.</p>
+        <a class="hero-link" href="#work">Explore the work <span>↓</span></a>
+      </div>
+      <div class="hero-meta">01 / 05</div>
+    </section>
+
+    <section class="intro">
+      <p class="section-label">A visual journal</p>
+      <h2>Photography shaped by movement, light, and the moments that make a place feel alive.</h2>
+    </section>
+
+    <section id="work" class="work-section">
+      <div class="section-heading">
+        <div>
+          <p class="section-label">Selected work</p>
+          <h2>From the road</h2>
+        </div>
+        <p class="section-note">A growing collection of places, landscapes, and passing moments.</p>
+      </div>
+
+      <div class="filters" aria-label="Portfolio filters">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="travel">Travel</button>
+        <button class="filter" data-filter="moments">Moments</button>
+        <button class="filter" data-filter="night">Night</button>
+      </div>
+
+      <div class="gallery">
+        <figure class="gallery-item large" data-category="moments">
+          <button class="image-button" data-full="assets/images/hero.webp" aria-label="Open sunset photographer photograph">
+            <img src="assets/images/hero.webp" alt="Silhouette of a photographer at sunset" loading="lazy">
+          </button>
+          <figcaption><span>01</span><span>At the edge of light</span></figcaption>
+        </figure>
+
+        <figure class="gallery-item" data-category="travel">
+          <button class="image-button" data-full="assets/images/rainbow-valley.webp" aria-label="Open rainbow valley photograph">
+            <img src="assets/images/rainbow-valley.webp" alt="Rainbow across a green mountain valley" loading="lazy">
+          </button>
+          <figcaption><span>02</span><span>After the rain</span></figcaption>
+        </figure>
+
+        <figure class="gallery-item" data-category="travel">
+          <button class="image-button" data-full="assets/images/coastal-sunset.webp" aria-label="Open coastal sunset photograph">
+            <img src="assets/images/coastal-sunset.webp" alt="Sunset over the sea with a city skyline" loading="lazy">
+          </button>
+          <figcaption><span>03</span><span>Last light, city ahead</span></figcaption>
+        </figure>
+
+        <figure class="gallery-item" data-category="night">
+          <button class="image-button" data-full="assets/images/moon.webp" aria-label="Open moon photograph">
+            <img src="assets/images/moon.webp" alt="Detailed moon against a black sky" loading="lazy">
+          </button>
+          <figcaption><span>04</span><span>Looking up</span></figcaption>
+        </figure>
+
+        <figure class="gallery-item large" data-category="travel">
+          <button class="image-button" data-full="assets/images/mountain-dusk.webp" aria-label="Open mountain dusk photograph">
+            <img src="assets/images/mountain-dusk.webp" alt="Layered mountains at sunset" loading="lazy">
+          </button>
+          <figcaption><span>05</span><span>Where the road disappears</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div>
+        <p class="section-label">About</p>
+        <h2>The world is always moving. I try to notice.</h2>
+      </div>
+      <div class="about-copy">
+        <p>The Wandering Eye is a personal photography journal built around travel, street life, and portraits. I’m interested in the quiet details — changing light, unfamiliar roads, ordinary people, and the brief moments that become memories.</p>
+        <p>This is the beginning of the archive. More journeys, stories, and photographs will find their way here.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <p class="section-label">Contact</p>
+      <h2>Have a story, place, or journey in mind?</h2>
+      <a class="contact-link" href="mailto:hello@example.com">saurabhsds13@gmail.com ↗</a>
+      <p class="contact-note">Replace this email and the Instagram link below with your real details.</p>
+      <a class="social-link" href="instagram.com/saurabhsds13" aria-label="Instagram profile">Instagram ↗</a>
+    </section>
+  </main>
+
+  <footer>
+    <span>© 2026 The Wandering Eye</span>
+    <span>Travel · Street · Portraits</span>
+  </footer>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" aria-label="Close image">×</button>
+    <img id="lightbox-image" src="" alt="">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
