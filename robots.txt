@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://saurabhsds13.github.io/the-wandering-eye/sitemap.xml
