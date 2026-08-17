@@ -3,128 +3,558 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="The Wandering Eye — travel, street and portrait photography.">
-  <title>The Wandering Eye — Photography</title>
+
+  <!-- SEO -->
+  <title>The Wandering Eye — Travel &amp; Street Photographer | India</title>
+  <meta name="description" content="The Wandering Eye — travel and street photography from India and beyond. Mumbai, Rajasthan, Agra, landscapes, portraits and everyday moments by Saurabh.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://saurabhsds13.github.io/the-wandering-eye/">
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website">
+  <meta property="og:title"       content="The Wandering Eye — Travel &amp; Street Photographer | India">
+  <meta property="og:description" content="Travel and street photography from India and beyond. Mumbai, Rajasthan, Agra, landscapes and everyday moments.">
+  <meta property="og:image"       content="assets/images/hero.jpg">
+  <meta property="og:url"         content="https://saurabhsds13.github.io/the-wandering-eye/">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="The Wandering Eye — Travel &amp; Street Photographer | India">
+  <meta name="twitter:description" content="Travel and street photography from India and beyond.">
+  <meta name="twitter:image"       content="assets/images/hero.jpg">
+
+  <!-- Fonts: Inter (700/800 for hero, 400/500/600 for UI) + Cormorant Garamond (editorial headings) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500;600;700;800&display=swap">
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
-    <a class="brand" href="#top" aria-label="The Wandering Eye home">THE WANDERING EYE</a>
-    <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
-    <nav id="site-nav" class="site-nav">
+
+  <!-- ════════════════════════════════════════════════════════
+       HEADER
+  ════════════════════════════════════════════════════════ -->
+  <header class="site-header" id="site-header">
+
+    <a class="brand-block" href="#top" aria-label="The Wandering Eye — home">
+      <span class="brand">The Wandering Eye</span>
+    </a>
+
+    <nav id="site-nav" class="site-nav" aria-label="Main navigation">
       <a href="#work">Work</a>
+      <a href="#stories">Stories</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
     </nav>
+
+    <button class="menu-toggle" aria-expanded="false" aria-controls="nav-overlay" aria-label="Open navigation menu">
+      <span class="menu-toggle-inner" aria-hidden="true">
+        <span></span>
+        <span></span>
+      </span>
+    </button>
+
   </header>
 
+  <!-- Mobile nav overlay -->
+  <div class="nav-overlay" id="nav-overlay" aria-hidden="true">
+    <nav class="nav-overlay-links" aria-label="Mobile navigation">
+      <a href="#work">Work</a>
+      <a href="#stories">Stories</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-overlay-meta">
+      <span>Travel · Street · Portraits</span>
+      <span>Mumbai, India</span>
+    </div>
+  </div>
+
+
   <main id="top">
-    <section class="hero">
-      <img src="assets/images/hero.jpg" alt="Photographer watching a golden sunset">
-      <div class="hero-overlay"></div>
-      <div class="hero-content">
-        <p class="eyebrow">TRAVEL · STREET · PORTRAITS</p>
-        <h1>The Wandering Eye</h1>
-        <p class="hero-line">Seeing places. Feeling moments. Keeping the journey.</p>
-        <a class="hero-link" href="#work">Explore the work <span>↓</span></a>
+
+    <!-- ════════════════════════════════════════════════════════
+         01 — HERO  (Marine Drive)
+    ════════════════════════════════════════════════════════ -->
+    <section class="hero" aria-label="Hero — Marine Drive, Mumbai">
+
+      <img
+        class="hero-image"
+        src="assets/images/hero.jpg"
+        alt="Marine Drive, Mumbai — the Queen's Necklace stretching along the Arabian Sea at dusk"
+        fetchpriority="high"
+        decoding="async"
+      >
+      <div class="hero-veil" aria-hidden="true"></div>
+
+      <!-- Typography block — upper third, above the building skyline -->
+      <div class="hero-body">
+        <p class="label">Travel · Street · Portrait</p>
+        <h1 class="hero-title">The Wandering<br>Eye</h1>
+        <p class="hero-tagline">Stories found between destinations.</p>
       </div>
-      <div class="hero-meta">01 / 05</div>
+
+      <a href="#work" class="hero-scroll" aria-label="Scroll to selected work">
+        <span>Selected Work</span>
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+          <path d="M6 1v10M1 6l5 5 5-5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+
+      <span class="hero-index" aria-hidden="true">Mumbai · India</span>
+
     </section>
 
-    <section class="intro">
-      <p class="section-label">A visual journal</p>
-      <h2>Photography shaped by movement, light, and the moments that make a place feel alive.</h2>
+
+    <!-- ════════════════════════════════════════════════════════
+         02 — SHORT INTRODUCTION
+    ════════════════════════════════════════════════════════ -->
+    <section class="intro" aria-label="Introduction">
+      <p class="label">A visual journal</p>
+      <h2 class="intro-statement">
+        I photograph places, people<br>
+        and the quiet moments<br>
+        <em>between them.</em>
+      </h2>
+      <div class="intro-rule" aria-hidden="true"></div>
     </section>
 
-    <section id="work" class="work-section">
-      <div class="section-heading">
-        <div>
-          <p class="section-label">Selected work</p>
-          <h2>From the road</h2>
+
+    <!-- ════════════════════════════════════════════════════════
+         03 — SELECTED WORK
+    ════════════════════════════════════════════════════════ -->
+    <section id="work" class="work" aria-labelledby="work-heading">
+
+      <div class="section-header">
+        <div class="section-header-left">
+          <p class="label">Selected work</p>
+          <h2 id="work-heading" class="section-title">From the road</h2>
         </div>
-        <p class="section-note">A growing collection of places, landscapes, and passing moments.</p>
+        <p class="section-note">Places change.<br>Moments remain.</p>
       </div>
 
-      <div class="filters" aria-label="Portfolio filters">
+      <!-- Filters -->
+      <div class="filters" role="group" aria-label="Filter photographs by category">
         <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="mumbai">Mumbai</button>
         <button class="filter" data-filter="travel">Travel</button>
-        <button class="filter" data-filter="moments">Moments</button>
-        <button class="filter" data-filter="night">Night</button>
+        <button class="filter" data-filter="street">Street</button>
+        <button class="filter" data-filter="nature">Nature</button>
       </div>
 
-      <div class="gallery">
-        <figure class="gallery-item large" data-category="moments">
-          <button class="image-button" data-full="assets/images/hero.webp" aria-label="Open sunset photographer photograph">
-            <img src="assets/images/hero-a.jpeg" alt="Silhouette of a photographer at sunset" loading="lazy">
+      <!-- Editorial asymmetric gallery -->
+      <div class="gallery" id="gallery">
+
+        <!-- 01 — Full-width feature -->
+        <figure class="gallery-item span-full" data-category="travel moments" data-index="01">
+          <button class="img-btn" data-full="assets/images/hero-a.jpeg" aria-label="View: At the edge of light">
+            <img
+              src="assets/images/hero-a.jpeg"
+              alt="A photographer's silhouette against the last light of golden hour — India"
+              loading="lazy" decoding="async"
+            >
           </button>
-          <figcaption><span>01</span><span>At the edge of light</span></figcaption>
+          <figcaption>
+            <span class="fig-num">01</span>
+            <span class="fig-title">At the edge of light</span>
+            <span class="fig-meta">India</span>
+          </figcaption>
         </figure>
 
-         <figure class="gallery-item" data-category="travel">
-          <button class="image-button" data-full="assets/images/rainbow-valley.webp" aria-label="Open rainbow valley photograph">
-            <img src="assets/images/sea-link.jpg" alt="Rainbow across a green mountain valley" loading="lazy">
+        <!-- 02–03 — Two equal -->
+        <figure class="gallery-item" data-category="mumbai travel street" data-index="02">
+          <button class="img-btn" data-full="assets/images/sea-link.jpg" aria-label="View: Bandra–Worli Sea Link">
+            <img
+              src="assets/images/sea-link.jpg"
+              alt="Bandra–Worli Sea Link arching over the Arabian Sea at dusk, Mumbai"
+              loading="lazy" decoding="async"
+            >
           </button>
-          <figcaption><span>02</span><span>At the link</span></figcaption>
+          <figcaption>
+            <span class="fig-num">02</span>
+            <span class="fig-title">At the Link</span>
+            <span class="fig-meta">Mumbai, India</span>
+          </figcaption>
         </figure>
 
-        <figure class="gallery-item" data-category="travel">
-          <button class="image-button" data-full="assets/images/rainbow-valley.webp" aria-label="Open rainbow valley photograph">
-            <img src="assets/images/rainbow-valley.webp" alt="Rainbow across a green mountain valley" loading="lazy">
+        <figure class="gallery-item" data-category="travel nature" data-index="03">
+          <button class="img-btn" data-full="assets/images/rainbow-valley.webp" aria-label="View: After the rain">
+            <img
+              src="assets/images/rainbow-valley.webp"
+              alt="A rainbow arching over a lush green mountain valley after monsoon rain, India"
+              loading="lazy" decoding="async"
+            >
           </button>
-          <figcaption><span>03</span><span>After the rain</span></figcaption>
+          <figcaption>
+            <span class="fig-num">03</span>
+            <span class="fig-title">After the rain</span>
+            <span class="fig-meta">Valley, India</span>
+          </figcaption>
         </figure>
 
-        <figure class="gallery-item" data-category="travel">
-          <button class="image-button" data-full="assets/images/coastal-sunset.webp" aria-label="Open coastal sunset photograph">
-            <img src="assets/images/coastal-sunset.webp" alt="Sunset over the sea with a city skyline" loading="lazy">
+        <!-- 04 — Full-width landscape -->
+        <figure class="gallery-item span-full" data-category="travel nature" data-index="04">
+          <button class="img-btn" data-full="assets/images/coastal-sunset.webp" aria-label="View: Last light, city ahead">
+            <img
+              src="assets/images/beach.jpg"
+              alt="Sun setting over the Arabian Sea with a city skyline silhouetted on the horizon"
+              loading="lazy" decoding="async"
+            >
           </button>
-          <figcaption><span>04</span><span>Last light, city ahead</span></figcaption>
+          <figcaption>
+            <span class="fig-num">04</span>
+            <span class="fig-title">Last light, city ahead</span>
+            <span class="fig-meta">Coastal India</span>
+          </figcaption>
         </figure>
 
-        <figure class="gallery-item" data-category="night">
-          <button class="image-button" data-full="assets/images/moon.webp" aria-label="Open moon photograph">
-            <img src="assets/images/moon.webp" alt="Detailed moon against a black sky" loading="lazy">
+        <!-- 05–06 — Narrow + Wide -->
+        <figure class="gallery-item span-narrow" data-category="nature" data-index="05">
+          <button class="img-btn" data-full="assets/images/moon.webp" aria-label="View: Looking up">
+            <img
+              src="assets/images/moon.webp"
+              alt="A luminous full moon against a deep black sky"
+              loading="lazy" decoding="async"
+            >
           </button>
-          <figcaption><span>05</span><span>Looking up</span></figcaption>
+          <figcaption>
+            <span class="fig-num">05</span>
+            <span class="fig-title">Looking up</span>
+            <span class="fig-meta">Night sky</span>
+          </figcaption>
         </figure>
 
-        <figure class="gallery-item large" data-category="travel">
-          <button class="image-button" data-full="assets/images/mountain-dusk.webp" aria-label="Open mountain dusk photograph">
-            <img src="assets/images/mountain-dusk.webp" alt="Layered mountains at sunset" loading="lazy">
+        <figure class="gallery-item span-wide" data-category="travel nature" data-index="06">
+          <button class="img-btn" data-full="assets/images/mountain-dusk.webp" aria-label="View: Where the road disappears">
+            <img
+              src="assets/images/mountain-dusk.webp"
+              alt="Layered mountain ridges fading to purple and gold at dusk, India"
+              loading="lazy" decoding="async"
+            >
           </button>
-          <figcaption><span>05</span><span>Where the road disappears</span></figcaption>
+          <figcaption>
+            <span class="fig-num">06</span>
+            <span class="fig-title">Where the road disappears</span>
+            <span class="fig-meta">Mountains, India</span>
+          </figcaption>
         </figure>
+
+      </div><!-- /gallery -->
+    </section>
+
+
+    <!-- ════════════════════════════════════════════════════════
+         COLLECTIONS STRIP
+    ════════════════════════════════════════════════════════ -->
+    <section class="categories" aria-labelledby="collections-heading">
+      <p class="label" id="collections-heading">Collections</p>
+      <div class="categories-grid">
+
+        <article class="cat-card">
+          <div class="cat-card-image">
+            <img src="assets/images/sea-link.jpg"
+                 alt="Mumbai collection — Sea Link and urban architecture at dusk"
+                 loading="lazy" decoding="async">
+          </div>
+          <div class="cat-card-body">
+            <h3>Mumbai</h3>
+            <p>Finding stillness in a city that never stops.</p>
+            <span class="cat-label">Urban · Street · Architecture</span>
+          </div>
+        </article>
+
+        <article class="cat-card">
+          <div class="cat-card-image">
+            <img src="assets/images/mountain-dusk.webp"
+                 alt="Landscapes collection — layered mountain ridges at dusk"
+                 loading="lazy" decoding="async">
+          </div>
+          <div class="cat-card-body">
+            <h3>Landscapes</h3>
+            <p>The quiet at the edge of the day.</p>
+            <span class="cat-label">Nature · Light · Horizon</span>
+          </div>
+        </article>
+
+        <article class="cat-card">
+          <div class="cat-card-image">
+            <img src="assets/images/rainbow-valley.webp"
+                 alt="Travel collection — rainbow over a valley between Indian cities"
+                 loading="lazy" decoding="async">
+          </div>
+          <div class="cat-card-body">
+            <h3>Travel</h3>
+            <p>I travel to see. I photograph to remember.</p>
+            <span class="cat-label">India · Journeys · Places</span>
+          </div>
+        </article>
+
+        <article class="cat-card">
+          <div class="cat-card-image">
+            <img src="assets/images/waterboy.jpeg"
+                 alt="Street collection — coastal sunset over an Indian city"
+                 loading="lazy" decoding="async">
+          </div>
+          <div class="cat-card-body">
+            <h3>Street</h3>
+            <p>Markets, lanes and the weight of ordinary moments.</p>
+            <span class="cat-label">People · Cities · Life</span>
+          </div>
+        </article>
+
       </div>
     </section>
 
-    <section id="about" class="about">
-      <div>
-        <p class="section-label">About</p>
-        <h2>The world is always moving. I try to notice.</h2>
+
+    <!-- ════════════════════════════════════════════════════════
+         04 — STORIES
+    ════════════════════════════════════════════════════════ -->
+    <section id="stories" class="stories" aria-labelledby="stories-heading">
+
+      <div class="section-header">
+        <div class="section-header-left">
+          <p class="label">Featured stories</p>
+          <h2 id="stories-heading" class="section-title">Visual essays</h2>
+        </div>
+        <p class="section-note">Photographs arranged<br>as small narratives.</p>
       </div>
-      <div class="about-copy">
-        <p>The Wandering Eye is a personal photography journal built around travel, street life, and portraits. I’m interested in the quiet details — changing light, unfamiliar roads, ordinary people, and the brief moments that become memories.</p>
-        <p>This is the beginning of the archive. More journeys, stories, and photographs will find their way here.</p>
+
+      <div class="stories-grid">
+
+        <article class="story-card story-card--lead">
+          <a href="story-agra.html" class="story-card-image" aria-label="Open story: Agra, Between Light &amp; Stone">
+            <img
+              src="assets/images/agra/20260328_072432.jpg"
+              alt="Taj Mahal at sunrise — white marble turning gold in the morning light, Agra, India"
+              loading="lazy" decoding="async"
+            >
+            <div class="story-card-veil" aria-hidden="true"></div>
+          </a>
+          <div class="story-card-body">
+            <div class="story-card-meta">
+              <span class="label">Agra, India · 2026</span>
+              <span class="story-count">23 photographs</span>
+            </div>
+            <h3 class="story-title"><a href="story-agra.html">Agra, Between Light &amp; Stone</a></h3>
+            <p class="story-desc">A journey from Mumbai to Agra — through Delhi, the streets of Agra, an early morning at the Taj Mahal and the quiet moments between.</p>
+            <a href="story-agra.html" class="story-link">View Story →</a>
+          </div>
+        </article>
+
+        <article class="story-card">
+          <a href="story-mumbai.html" class="story-card-image" aria-label="Open story: Mumbai After Rain">
+            <img
+              src="assets/images/coastal-sunset.webp"
+              alt="Mumbai coastline glowing after monsoon rain — the city reflected in wet streets"
+              loading="lazy" decoding="async"
+            >
+            <div class="story-card-veil" aria-hidden="true"></div>
+          </a>
+          <div class="story-card-body">
+            <div class="story-card-meta">
+              <span class="label">Mumbai, India · 2026</span>
+              <span class="story-count">12 photographs</span>
+            </div>
+            <h3 class="story-title"><a href="story-mumbai.html">Mumbai After Rain</a></h3>
+            <p class="story-desc">A visual study of Mumbai during the monsoon — the reflections, the silence between downpours and the way light changes everything.</p>
+            <a href="story-mumbai.html" class="story-link">View Story →</a>
+          </div>
+        </article>
+
+        <article class="story-card">
+          <a href="story-rajasthan.html" class="story-card-image" aria-label="Open story: Rajasthan">
+            <img
+              src="assets/images/mountain-dusk.webp"
+              alt="Layered dusk light fading over the vast Rajasthan landscape"
+              loading="lazy" decoding="async"
+            >
+            <div class="story-card-veil" aria-hidden="true"></div>
+          </a>
+          <div class="story-card-body">
+            <div class="story-card-meta">
+              <span class="label">Rajasthan, India · 2026</span>
+              <span class="story-count">9 photographs</span>
+            </div>
+            <h3 class="story-title"><a href="story-rajasthan.html">Rajasthan</a></h3>
+            <p class="story-desc">Colors, people and open landscapes from the land of kings.</p>
+            <a href="story-rajasthan.html" class="story-link">View Story →</a>
+          </div>
+        </article>
+
       </div>
     </section>
 
-    <section id="contact" class="contact">
-      <p class="section-label">Contact</p>
-      <h2>Have a story, place, or journey in mind?</h2>
-      <a class="contact-link" href="mailto:hello@example.com">saurabhsds13@gmail.com ↗</a>
-      <p class="contact-note">Replace this email and the Instagram link below with your real details.</p>
-      <a class="social-link" href="instagram.com/saurabhsds13" aria-label="Instagram profile">Instagram ↗</a>
+
+    <!-- ════════════════════════════════════════════════════════
+         05 — FULL-WIDTH VISUAL BREAK
+         Single large photograph. No card. No heavy overlay.
+         A breathing pause between Stories and About.
+    ════════════════════════════════════════════════════════ -->
+    <figure class="visual-break" aria-label="Featured photograph — mountain dusk">
+      <img
+        class="visual-break-image"
+        src="assets/images/mountain-dusk.webp"
+        alt="Layered mountain ridges fading from gold to purple at dusk — somewhere in India"
+        loading="lazy"
+        decoding="async"
+      >
+      <figcaption class="visual-break-caption">
+        <span>Mountains, India</span>
+        <span>2026</span>
+      </figcaption>
+    </figure>
+
+
+    <!-- ════════════════════════════════════════════════════════
+         06 — ABOUT
+    ════════════════════════════════════════════════════════ -->
+    <section id="about" class="about" aria-labelledby="about-heading">
+
+      <div class="about-portrait">
+        <div class="about-portrait-placeholder">
+          <img
+            src="assets/images/hero-a.jpeg"
+            alt="Saurabh — photographer, silhouetted at golden hour against the open sky"
+            loading="lazy" decoding="async"
+          >
+        </div>
+      </div>
+
+      <div class="about-body">
+        <p class="label">About</p>
+        <h2 id="about-heading" class="about-heading">
+          The world is always moving.<br>
+          <em>I try to notice.</em>
+        </h2>
+        <div class="about-copy">
+          <p>My name is Saurabh. By day I'm a software developer based in Mumbai — building products, systems and interfaces. By every other hour, I'm out with a camera.</p>
+          <p>Photography is how I slow down. The same attention I bring to writing code — noticing details, finding structure in complexity — is what I look for in a frame. My work explores travel, street life, nature and the relationship between people and the places they inhabit.</p>
+        </div>
+        <dl class="about-details">
+          <div>
+            <dt>Based in</dt>
+            <dd>Mumbai, India</dd>
+          </div>
+          <div>
+            <dt>Day job</dt>
+            <dd>Software Developer</dd>
+          </div>
+          <div>
+            <dt>Photography</dt>
+            <dd>Hobby · Passion · Ongoing</dd>
+          </div>
+          <div>
+            <dt>This website</dt>
+            <dd>HTML · CSS · Vanilla JS · GitHub Actions</dd>
+          </div>
+        </dl>
+
+        <!-- Developer links -->
+        <div class="about-dev-links">
+          <a href="https://github.com/saurabhsds13" target="_blank" rel="noopener noreferrer" class="about-dev-link" aria-label="GitHub profile — opens in new tab">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            GitHub
+          </a>
+          <a href="https://linkedin.com/in/saurabhsds13" target="_blank" rel="noopener noreferrer" class="about-dev-link" aria-label="LinkedIn profile — opens in new tab">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="4" cy="4" r="2" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+            LinkedIn
+          </a>
+        </div>
+
+      </div>
+
     </section>
+
+
+    <!-- ════════════════════════════════════════════════════════
+         07 — CONTACT
+    ════════════════════════════════════════════════════════ -->
+    <section id="contact" class="contact" aria-labelledby="contact-heading">
+      <div class="contact-inner">
+        <p class="label">Contact</p>
+        <h2 id="contact-heading" class="contact-heading">
+          Let's work<br><em>together.</em>
+        </h2>
+        <p class="contact-sub">Photography collaborations, travel projects, or just to say hello — find me here:</p>
+        <div class="contact-links">
+          <a class="contact-email" href="mailto:saurabhsds13@gmail.com" aria-label="Send an email to Saurabh">
+            saurabhsds13@gmail.com
+            <svg width="11" height="11" viewBox="0 0 11 11" fill="none" aria-hidden="true">
+              <path d="M1 10L10 1M10 1H4M10 1v6" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <div class="contact-socials">
+            <a class="contact-social" href="https://instagram.com/saurabhsds13" target="_blank" rel="noopener noreferrer" aria-label="Instagram — opens in new tab">
+              Instagram
+              <svg width="11" height="11" viewBox="0 0 11 11" fill="none" aria-hidden="true">
+                <path d="M1 10L10 1M10 1H4M10 1v6" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a class="contact-social" href="https://github.com/saurabhsds13" target="_blank" rel="noopener noreferrer" aria-label="GitHub — opens in new tab">
+              GitHub
+              <svg width="11" height="11" viewBox="0 0 11 11" fill="none" aria-hidden="true">
+                <path d="M1 10L10 1M10 1H4M10 1v6" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a class="contact-social" href="https://linkedin.com/in/saurabhsds13" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn — opens in new tab">
+              LinkedIn
+              <svg width="11" height="11" viewBox="0 0 11 11" fill="none" aria-hidden="true">
+                <path d="M1 10L10 1M10 1H4M10 1v6" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
-  <footer>
-    <span>© 2026 The Wandering Eye</span>
-    <span>Travel · Street · Portraits</span>
+
+  <!-- ════════════════════════════════════════════════════════
+       08 — FOOTER
+  ════════════════════════════════════════════════════════ -->
+  <footer class="site-footer">
+
+    <div class="footer-brand-block">
+      <span class="footer-brand">The Wandering Eye</span>
+      <span class="footer-location">Mumbai · India</span>
+    </div>
+
+    <p class="footer-tagline">Collected along the way.</p>
+
+    <div class="footer-right">
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="https://instagram.com/saurabhsds13" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://github.com/saurabhsds13" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://linkedin.com/in/saurabhsds13" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:saurabhsds13@gmail.com">Email</a>
+      </nav>
+      <span class="footer-copy">© 2026 The Wandering Eye</span>
+      <span class="footer-built">Designed &amp; built by Saurabh &nbsp;·&nbsp; HTML · CSS · JS</span>
+    </div>
+
   </footer>
 
-  <div class="lightbox" id="lightbox" aria-hidden="true">
-    <button class="lightbox-close" aria-label="Close image">×</button>
-    <img id="lightbox-image" src="" alt="">
+
+  <!-- ════════════════════════════════════════════════════════
+       LIGHTBOX
+  ════════════════════════════════════════════════════════ -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photograph viewer" aria-hidden="true">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close photograph">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+        <path d="M1 1l12 12M13 1L1 13" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+      </svg>
+    </button>
+    <figure class="lightbox-figure">
+      <img id="lightbox-image" src="" alt="">
+      <figcaption id="lightbox-caption" class="lightbox-caption"></figcaption>
+    </figure>
   </div>
 
   <script src="script.js"></script>
