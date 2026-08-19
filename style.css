@@ -1567,27 +1567,39 @@ button { font: inherit; color: inherit; cursor: pointer; }
 
 /* ── Hero image ──────────────────────────────────────────────── */
 .essay-hero-figure {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+  width: 60%;
+  max-width: 1000px;
 }
 
 .essay-hero-img {
   width: 100%;
-  height: clamp(480px, 78vh, 960px);
-  object-fit: cover;
-  object-position: center 38%;
+  height:auto;
   display: block;
+  object-fit: contain;
   filter: saturate(.82) contrast(1.06) brightness(.94);
 }
 
 .essay-hero-caption {
-  padding: 12px var(--gutter) 0;
+  padding: 12px 0 0;
   border-top: 1px solid var(--rule);
   font-size: 9px;
   font-weight: 500;
   letter-spacing: .16em;
   text-transform: uppercase;
   color: var(--text-dim);
+}
+
+@media (max-width: 768px) {
+  .essay-hero-figure {
+    width: 100%;
+  }
+
+  .essay-hero-caption {
+    padding-left: var(--gutter);
+    padding-right: var(--gutter);
+  }
 }
 
 /* ── Chapter ─────────────────────────────────────────────────── */
@@ -1758,6 +1770,19 @@ button { font: inherit; color: inherit; cursor: pointer; }
 
 .essay-fig img {
   width: 100%;
+  height: auto;
+  display: block;
+  transition: transform .75s cubic-bezier(.2,.7,.2,1), opacity .5s ease;
+  will-change: transform;
+  filter: saturate(.85) contrast(1.04);
+}
+
+.essay-fig:hover img {
+  transform: scale(1.018);
+  opacity: .92;
+}
+/* .essay-fig img {
+  width: 100%;
   object-fit: cover;
   object-position: center;
   display: block;
@@ -1769,7 +1794,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .essay-fig:hover img {
   transform: scale(1.018);
   opacity: .92;
-}
+} */
 
 .essay-fig figcaption {
   padding-top: 9px;
